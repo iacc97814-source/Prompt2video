@@ -1,17 +1,7 @@
-# Prompt2Video AI — MVP
+# Prompt2Video AI — Real Video MVP
 
-Mobile-friendly first version of a prompt-to-video app.
+Deploy this folder as a Vercel project. Add Environment Variable `REPLICATE_API_TOKEN` containing your Replicate token, then redeploy.
 
-## What this version does
-- Accepts a natural-language video prompt.
-- Creates a structured multi-scene video plan.
-- Creates scene-specific AI generation prompts.
-- Supports 15–20 minute story planning.
-- Includes browser text-to-speech demo.
-- Downloads the generated script.
+Never put the token in frontend files or GitHub source.
 
-## Important
-This MVP does **not** generate real AI video files yet. Real image/video generation requires a connected AI video-generation API and server-side secret key. The next stage can connect an available provider without exposing the key in GitHub.
-
-## Run
-Open `index.html` in a browser, or deploy the folder with a static web host.
+The app uses `kwaivgi/kling-v3-video` for 5/10/15-second 16:9 clips with native audio. Longer films require a multi-clip workflow.
