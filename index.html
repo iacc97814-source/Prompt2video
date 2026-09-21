@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prompt2Video AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="logo">Prompt<span>2Video</span></div><div class="badge">MVP • Free Demo</div></header>
+<main>
+<section class="hero">
+  <p class="eyebrow">AI VIDEO STUDIO</p>
+  <h1>Turn a prompt into a video story.</h1>
+  <p class="sub">Describe your characters, dialogue, actions and scene. The app turns it into a structured video plan ready for AI generation.</p>
+</section>
+
+<section class="card">
+  <label for="prompt">Your video prompt</label>
+  <textarea id="prompt" placeholder="Example: Two friends are talking in a café. Ali says they should start a business. Ahmed agrees. They stand up, walk outside and shake hands. Make it cinematic and natural."></textarea>
+  <div class="row">
+    <select id="duration">
+      <option value="30">30 sec demo</option>
+      <option value="60">1 minute demo</option>
+      <option value="300">5 minutes plan</option>
+      <option value="1200">15–20 minutes plan</option>
+    </select>
+    <select id="style">
+      <option>Cinematic</option><option>Realistic</option><option>Anime</option><option>3D Animation</option><option>Documentary</option>
+    </select>
+  </div>
+  <button id="generate">Generate Video Plan</button>
+  <p id="status" class="status"></p>
+</section>
+
+<section id="result" class="card hidden">
+  <div class="resultHead"><div><p class="eyebrow">GENERATED</p><h2>Your story</h2></div><button id="download" class="secondary">Download Script</button></div>
+  <div id="story"></div>
+  <div id="scenes"></div>
+  <div class="voice"><div><b>Voice-over</b><p>Browser demo voice is available below.</p></div><button id="speak" class="secondary">▶ Play Voice</button></div>
+</section>
+</main>
+<footer>Prompt2Video AI • First MVP</footer>
+<script src="app.js"></script>
+</body>
+</html>
